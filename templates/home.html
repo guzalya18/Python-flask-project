@@ -1,0 +1,68 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Карусель</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Interior Design Studio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Pricing</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="container">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">Inspiration for your interior</h1>
+      <p class="lead">Done in 15 days</p>
+      <img src="{{url_for('static', filename='badroom.png')}}" class="w-75" alt="">
+      <p class="my-4 w-75">Color is sometimes divided into two categories:warm and cool tones. Warm tones, like red,orange and yellow can energize a space and its occupants. Cool tones such as blue, green andpurple generally create quiet, relaxing atmospheres.</p>
+      <a href="#" class="btn btn-success btn-lg">Learn more</a>
+    </section>
+    <section class="mt-3 pb-5">
+      <p class="lead">Done in 20 days</p>
+      <img src="{{url_for('static', filename='patio org.png')}}" class="w-75" alt="">
+      <p class="my-4 w-75">The foundation of an interior, space is a fundamental concept to understand, ensuring you’re best equipped to take advantage of what is available to you. The available ‘space’ usually can’t be easily changed (though sometimes a designer may have the luxury of doing so), so you need to work with what you have within the physical boundaries of the room.</p>
+      <a href="#" class="btn btn-success btn-lg">Learn more</a>
+    </section>
+    <section class="mt-3 pb-5">
+      <p class="lead">Done in 15 days</p>
+      <img src="{{url_for('static', filename='livingroom org.png')}}" class="w-75" alt="">
+      <p class="my-4 w-75">Balance is all about achieving equilibrium that pleases the eye. Traditional interior design incorporates symmetrical balance, a technique that attempts to make both sides of the room mirror one another. The current trend Interior designers in Miami Beach use is Asymmetry, a deviation from symmetrical balance where the room is designed with dissimilar fixture design and arrangement yet maintains the same visual weight.</p>
+      <a href="#" class="btn btn-success btn-lg">Learn more</a>
+    </section>
+    <section class="mt-3 pb-5">
+      <p class="lead">Done in 15 days</p>
+      <img src="{{url_for('static', filename='dining origin.png')}}" class="w-75" alt="">
+      <p class="my-4 w-75">Natural or man-made light is a critical aspect of any space. Without it, all of the other elements would not be able to shine to their full potential. Light can be broken into the categories of task lighting (defined purpose), accent lighting (emphasising objects) and mood lighting (adding ambience).</p>
+      <a href="#" class="btn btn-success btn-lg">Learn more</a>
+    </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<footer>
+  <p>Author: Guzalia T.</p>
+  <p>All renders are made with 3ds max</p>
+</footer>
+</html>
+
+
+{% endblock %}
